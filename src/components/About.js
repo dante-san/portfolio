@@ -1,18 +1,29 @@
 import React from "react";
+import { FaChevronDown } from "react-icons/fa";
+import ScrollIntoView from "react-scroll-into-view";
 
 function About() {
   return (
-    <div className="max-w-4xl mt-20 mx-auto">
-      <p className="text-2xl text-black md:text-4xl font-bold text-center">
-        Hey👋
+    <div className="mt-20 max-w-2xl mx-auto">
+      <p className="text-2xl md:text-4xl text-center text-black font-bold">
+        Hey🤟
       </p>
-      {/* <p className="text-base text-center leading-relaxed mt-4">
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book. It has survived not only five centuries, but
-        also the leap into electronic typesetting, remaining essentially
-        unchanged. It was popularised in the 1960s
-      </p> */}
+      <p className="mt-4 text-center text-base leading-relaxed">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their
+        infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <ScrollIntoView selector="#tech">
+        <div className="p-20 mx-auto">
+          <FaChevronDown className="mx-auto text-3xl text-blue-500 animate-bounce" />
+        </div>
+      </ScrollIntoView>
     </div>
   );
 }
